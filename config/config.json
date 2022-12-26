@@ -1,5 +1,5 @@
 {
-    "PORT" : "80",
+    "PORT" : "3001",
     "ADMINPASSWORT": "Test123",
     "ADMINUSERNAME": "admin"
 }
