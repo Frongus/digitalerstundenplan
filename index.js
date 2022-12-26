@@ -2,6 +2,7 @@ const express = require('express');
 const server = express();
 const config = require('./config/config.json');
 const bodyParser = require('body-parser');
+const TestPort = '3001';
 
 server.use('/', require('./modules/routes.js'));
 server.use('/sick/', require('./modules/sick.js'));
@@ -20,6 +21,6 @@ server.on('error', (e) => {
     console.log(e);
 })
 
-server.listen(config.PORT, () => {
-    console.log(`Server is currently running on Port: ${config.PORT}`);
+server.listen(TestPort, () => {
+    console.log(`Server is currently running on Port: ${TestPort}`);
 });
